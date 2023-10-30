@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>
+            Basic Calculator
+        </title>
+    </head>
+    <body>
+        <script>
+           
+          
+             
+           var result;
+           var val1=parseInt(prompt("Enter the Number"));
+           do{
+             
+           var fun=parseInt(prompt("Enter 1 for addition,"+"Enter 2 for Subtraction,"+"Enter 3 for Multiplication,"+"Enter 4 for Division"))
+            var val2=parseInt(prompt("Enter the Number"));
+           var con=parseInt(prompt("Enter 1 for continue or enter any number to display result"));
+
+           if(fun==1)
+            {
+                 result=val1+val2; 
+                 
+            }
+            else if(fum==2)
+            {
+                result=val1-val2;
+                
+            }
+            else if(fun==3)
+            {
+                result=val1*val2;
+                
+            }
+            else if(fun==4)
+            {
+                result=val1/val2;
+                
+            }
+            else{
+                document.write("Enter a valid Functionality Number");
+            }
+            
+        }while(con==1)
+        document.write("Result is "+result);
+        </script>
+    </body>
+</html>
